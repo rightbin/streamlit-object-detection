@@ -52,7 +52,7 @@ def load_model(model_name):
 
   return model
 
-PATH_TO_LABELS = item {
+PATH_TO_LABELS = """item {
   name: "/m/01g317"
   id: 1
   display_name: "person"
@@ -451,7 +451,7 @@ item {
   name: "/m/012xff"
   id: 90
   display_name: "toothbrush"
-}
+}"""
 
 
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS)
