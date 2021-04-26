@@ -52,7 +52,7 @@ def load_model(model_name):
 
   return model
 
-PATH_TO_LABELS = 'data\\mscoco_label_map.pbtxt'
+PATH_TO_LABELS = '.\data\mscoco_label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS)
 
 
