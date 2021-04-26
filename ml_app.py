@@ -56,8 +56,6 @@ PATH_TO_LABELS = './mscoco_label_map.pbtxt'
 
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS)
 
-
-
 model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
 
 detection_model = load_model(model_name)
@@ -134,7 +132,7 @@ def run_ml_app():
             return image_np
 
         image_np = show_inference(detection_model)
-        print(type(image_np))
+        # print(type(image_np))
         pil_image=Image.fromarray(image_np)
                 
         st.image(pil_image)
